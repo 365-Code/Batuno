@@ -11,8 +11,6 @@ import Theme from './components/Theme'
 import ForgotPassword from './pages/ForgotPassword'
 
 const App = () => {
-
-
   return (
     <>
       <ThemeState>

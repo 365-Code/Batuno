@@ -5,8 +5,9 @@ import avatar4 from '../assets/avatar4.jpg'
 import avatar5 from '../assets/avatar5.jpg'
 import avatar6 from '../assets/avatar6.jpg'
 
+export const host = import.meta.env.VITE_REACT_APP_API
 
-export const host = "http://localhost:8080"
+// "http://localhost:8080"
 export const registerRoute = `${host}/api/auth/register`
 export const loginRoute = `${host}/api/auth/login`
 export const forgotPasswordRoute = `${host}/api/auth/forgotPassword`
