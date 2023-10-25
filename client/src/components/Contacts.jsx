@@ -14,8 +14,8 @@ const Contacts = ({contacts}) => {
 
   return (
     <>
-        <div id="contacts"
-        className={`flex flex-col gap-2 ${theme.primaryTextColor} sm:w-1/4 w-[20%] `}>
+        <div id="contacts" className={`flex flex-col gap-2 ${theme.primaryTextColor} sm:relative sm:w-1/4 w-[20%] `}>
+        {/* <div id="contacts" className={`flex flex-col gap-2 ${theme.primaryTextColor} sm:relative sm:w-1/4 top-0 left-0 fixed w-full h-full`}> */}
 
             <div className="brand h-[10%] flex gap-2 sm:justify-start justify-center items-center">
                     <img src={logo} alt="batuno" 

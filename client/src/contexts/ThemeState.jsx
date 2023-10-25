@@ -33,7 +33,7 @@ const ThemeState = ({children})=>{
         border: "border-[#1d90f5]"
     }
     
-    const [theme, setTheme] = useState(light);
+    const [theme, setTheme] = useState(dark);
 
     return (
 

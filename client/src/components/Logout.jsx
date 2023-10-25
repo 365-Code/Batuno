@@ -31,7 +31,7 @@ const Logout = () => {
         <button
         onClick={handleLogOut} 
         // className='font-bold p-1 cursor-pointer rounded-full border hover:bg-white hover:text-black'>
-        className={`cursor-pointer text-2xl rounded-full hover:${theme.outerBackground} ${theme.primaryTextColor} hover:glow hover:bg-blue-500 bg-black`}>
+        className={`transition-all p-1 cursor-pointer text-xl rounded-full ${theme.primaryTextColor} hover:glow hover:bg-blue-500 hover:text-slate-200`}>
             <IoMdLogOut/>
         </button>
         <ToastContainer/>
