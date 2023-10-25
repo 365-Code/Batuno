@@ -93,14 +93,14 @@ const Login = () => {
 
             <div 
             // className="login-box max-w-[90%] bg-[#e6ebf1] py-8 px-14 rounded-xl shadow-md drop-shadow-2xl shadow-slate-500">
-            className={`login-box max-w-[90%] ${theme.outerBackground} ${theme.primaryTextColor} py-4 px-8 sm:py-8 sm:px-14 rounded-xl border border-blue-500`}>
+            className={`login-box max-w-[90%] ${theme.outerBackground} ${theme.primaryTextColor} py-4 px-8 sm:py-8 sm:px-14 rounded-xl shadow-lg shadow-black`}>
 
                 <div className="brand flex flex-col items-center gap-1">
                     <div className ="brand-image">
                         <img src={logo} alt="batuno" 
                         className=' h-20 rounded-full'/>
                     </div>
-                    <h1 className='text-2xl uppercase font-bold'>Batuno</h1>
+                    <h1 className={`text-2xl uppercase font-bold ${theme.secondaryTextColor}`}>Batuno</h1>
                     <p className='font-semibold'>Make Connections</p>
                 </div>
 
@@ -108,12 +108,12 @@ const Login = () => {
 
                 <div className="input-group py-4 flex flex-col gap-4">
 
-                    <div className="input-field shadow-inner shadow-current py-2 px-4  rounded-lg ">
+                    <div className="input-field shadow-inner shadow-black py-2 px-4  rounded-lg ">
                         <input name='username' value={cred.username} onChange={handleChange} type="text" placeholder='username'  
                         className={` ${theme.primaryTextColor} w-full bg-transparent p-2 outline-none border-none`}/>
                     </div>
 
-                    <div className="input-field shadow-inner shadow-current py-2 px-4  rounded-lg ">
+                    <div className="input-field shadow-inner shadow-black py-2 px-4  rounded-lg ">
                         <input name='password' value={cred.password} onChange={handleChange} type="password" placeholder='password'  
                         className={`${theme.primaryTextColor} w-full bg-transparent p-2 outline-none border-none`}/>
                     </div>
@@ -121,11 +121,11 @@ const Login = () => {
                 </div>
 
                 <div className="btn-group flex flex-col gap-2 text-center">
-                    <button type='submit' className='p-2 font-semibold rounded-lg bg-[#50b5d3] hover:bg-[#93C6B7] shadow-sm shadow-current '>Login</button>
+                    <button type='submit' className='transition-all p-2 font-semibold rounded-lg bg-[#50b5d3] hover:text-slate-800 hover:bg-[#93C6B7]'>Login</button>
                     <p>
-                        <Link to={'/forgot-password'}><span className='font-semibold text-rose-800 hover:underline cursor-pointer ' >Forgot password?</span></Link>
+                        <Link to={'/forgot-password'}><span className='font-light text-rose-800 hover:underline cursor-pointer ' >Forgot password?</span></Link>
                         <span> or </span>
-                        <Link to={'/register'}><span className='font-semibold text-violet-800 hover:underline cursor-pointer ' >Sign up</span></Link>
+                        <Link to={'/register'}><span className='font-light text-violet-800 hover:underline cursor-pointer ' >Sign up</span></Link>
                     </p>
                 </div>
 

@@ -41,7 +41,7 @@ const Batuno = () => {
         className={`${theme.bodyBackground} w-screen h-screen flex items-center justify-center`}>
           <div 
           // className="batuno-box w-[65%] h-[80%] p-6 flex bg-[#fefefe] border rounded-xl shadow-xl justify-between">
-          className={`${theme.outerBackground} batuno-box w-[90%] sm:w-[75%] h-[80%] py-6 px-4 flex border rounded-xl shadow-xl justify-between`}>
+          className={`${theme.outerBackground} batuno-box w-[90%] sm:w-[75%] h-[80%] py-6 px-4 flex rounded-xl justify-between`}>
             <Contacts contacts={contacts} selectChat={setChatUser}/>
             {
               !chatUser ?

@@ -142,10 +142,10 @@ const Register = () => {
                 </div>
 
                 <div className="btn-group flex flex-col gap-2 text-center">
-                    <button type='submit' className='p-2 rounded-lg font-semibold bg-[#50b5d3] hover:bg-[#93C6B7] '>Register</button>
+                    <button type='submit' className={`p-2 rounded-lg tracking-wider bg-[#50b5d3] hover:bg-[#93C6B7] ${theme.primaryTextColor}`}>Register</button>
                     <p>
-                        <span>Already Registered? </span>
-                        <Link to={'/login'}><span className='font-semibold text-violet-800 hover:underline cursor-pointer ' >Login</span></Link>
+                        <span className={`${theme.primaryTextColor} font-light`}>Already Registered? </span>
+                        <Link to={'/login'}><span className='text-violet-800 hover:underline cursor-pointer ' >Login</span></Link>
                     </p>
                 </div>
 

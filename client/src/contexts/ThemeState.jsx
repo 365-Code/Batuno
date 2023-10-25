@@ -11,7 +11,7 @@ const ThemeState = ({children})=>{
         themeName: "light",
         primaryTextColor: "text-[#18223b]",
         secondaryTextColor: "text-[#6127ff]",
-        bodyBackground: "bg-[#e4e9f9]",
+        bodyBackground: "bg-[#d6d6d6]",
         outerBackground: "bg-[#eff2f8]",
         innerBackground: "bg-[#d6e3fd]",
         userChatColor: "bg-[#1d90f5]",
@@ -33,7 +33,7 @@ const ThemeState = ({children})=>{
         border: "border-[#1d90f5]"
     }
     
-    const [theme, setTheme] = useState(dark);
+    const [theme, setTheme] = useState(light);
 
     return (
 
