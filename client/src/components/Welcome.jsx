@@ -11,7 +11,7 @@ const Welcome = () => {
     <>
         <div id="welcome"
         // className='bg-[#DDE6ED] rounded-md w-[72%] p-4 flex flex-col justify-center items-center text-center'>
-        className={`${theme.innerBackground} rounded-md sm:w-[72%] w-[65%] sm:px-3 px-1 flex flex-col justify-center items-center text-center`}>
+        className={`${theme.innerBackground} rounded-md sm:w-[72%] w-[75%] sm:px-3 px-1 flex flex-col justify-center items-center text-center`}>
 
           <img src={hello} alt="" className='h-[50%]'/>
           {/* <div className='text-center'> */}

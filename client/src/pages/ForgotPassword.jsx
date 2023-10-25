@@ -96,7 +96,7 @@ const ForgotPassword = () => {
 
             <div 
             // className="register-box max-w-[90%] bg-[#e6ebf1] py-8 px-14 rounded-lg shadow-lg shadow-current border-slate-100 ">
-            className={`register-box max-w-[90%] ${theme.outerBackground} py-8 px-14 rounded-lg shadow-lg shadow-current border-slate-100`}>
+            className={`register-box max-w-[90%] ${theme.outerBackground} py-4 px-8 sm:py-8 sm:px-14 rounded-lg shadow-lg shadow-current border-slate-100`}>
 
                 <div className="brand flex flex-col items-center gap-1 ">
                     <div className ="brand-image">
@@ -113,22 +113,22 @@ const ForgotPassword = () => {
 
                     <div className="input-field shadow-inner shadow-current py-2 px-4  rounded-lg ">
                         <input name='username' value={cred.username} onChange={handleChange} type="text" placeholder='username'  
-                        className={`bg-transparent p-2 outline-none border-none ${theme.primaryTextColor} `} />
+                        className={`w-full bg-transparent p-2 outline-none border-none ${theme.primaryTextColor} `} />
                     </div>
 
                     <div className="input-field shadow-inner shadow-current py-2 px-4  rounded-lg ">
-                        <input name='secPin' value={cred.secPin && cred.secPin} onChange={handleChange} type="number" maxLength={6} minLength={6} placeholder='security pin'  
-                        className={`bg-transparent p-2 outline-none border-none ${theme.primaryTextColor} `} />
+                        <input name='secPin'  value={cred.secPin && cred.secPin} onChange={handleChange} type="password" maxLength={6} minLength={6} placeholder='security pin'  
+                        className={`w-full bg-transparent p-2 outline-none border-none ${theme.primaryTextColor} `} />
                     </div>
 
                     <div className="input-field shadow-inner shadow-current py-2 px-4  rounded-lg ">
                         <input name='password' value={cred.password} onChange={handleChange} type="password" placeholder='new password'  
-                        className={`bg-transparent p-2 outline-none border-none ${theme.primaryTextColor} `} />
+                        className={`w-full bg-transparent p-2 outline-none border-none ${theme.primaryTextColor} `} />
                     </div>
 
                     <div className="input-field shadow-inner shadow-current py-2 px-4  rounded-lg ">
                         <input name='cpassword' value={cred.cpassword} onChange={handleChange} type="password" placeholder='confirm new password'
-                        className={`bg-transparent p-2 outline-none border-none ${theme.primaryTextColor} `} />
+                        className={`w-full bg-transparent p-2 outline-none border-none ${theme.primaryTextColor} `} />
                     </div>
     
                 </div>

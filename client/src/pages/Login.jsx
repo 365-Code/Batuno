@@ -87,19 +87,19 @@ const Login = () => {
     <>
         <div id="login" 
         // className=' w-screen h-screen bg-[#e6ebf1] flex flex-col justify-center items-center  '>
-        className={`w-screen h-screen ${theme.bodyBackground} flex flex-col justify-center items-center`}>
+        className={`min-w-screen min-h-screen ${theme.bodyBackground} flex flex-col justify-center items-center`}>
 
             <div 
             // className="login-box max-w-[90%] bg-[#e6ebf1] py-8 px-14 rounded-xl shadow-md drop-shadow-2xl shadow-slate-500">
-            className={`login-box max-w-[90%] ${theme.outerBackground} ${theme.primaryColor} py-8 px-14 rounded-xl border border-blue-500`}>
+            className={`login-box max-w-[90%] ${theme.outerBackground} ${theme.primaryTextColor} py-4 px-8 sm:py-8 sm:px-14 rounded-xl border border-blue-500`}>
 
-                <div className="brand flex flex-col items-center gap-1 ">
+                <div className="brand flex flex-col items-center gap-1">
                     <div className ="brand-image">
                         <img src={logo} alt="batuno" 
-                        className=' h-20 rounded-full ' />
+                        className=' h-20 rounded-full'/>
                     </div>
-                    <h1 className='text-2xl uppercase font-bold' >Batuno</h1>
-                    <p className='font-semibold' >Make Connections</p>
+                    <h1 className='text-2xl uppercase font-bold'>Batuno</h1>
+                    <p className='font-semibold'>Make Connections</p>
                 </div>
 
             <form onSubmit={handleSubmit}>
@@ -108,12 +108,12 @@ const Login = () => {
 
                     <div className="input-field shadow-inner shadow-current py-2 px-4  rounded-lg ">
                         <input name='username' value={cred.username} onChange={handleChange} type="text" placeholder='username'  
-                        className={` ${theme.primaryTextColor} bg-transparent p-2 outline-none border-none`}/>
+                        className={` ${theme.primaryTextColor} w-full bg-transparent p-2 outline-none border-none`}/>
                     </div>
 
                     <div className="input-field shadow-inner shadow-current py-2 px-4  rounded-lg ">
                         <input name='password' value={cred.password} onChange={handleChange} type="password" placeholder='password'  
-                        className={`${theme.primaryTextColor} bg-transparent p-2 outline-none border-none`}/>
+                        className={`${theme.primaryTextColor} w-full bg-transparent p-2 outline-none border-none`}/>
                     </div>
     
                 </div>
