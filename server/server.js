@@ -17,9 +17,9 @@ connectDB();
 app.use(cors({origin: true}));
 app.use(express.json())
 
+
 app.use('/api/auth', authRoute)
 app.use('/api/message', messageRoute)
-
 
 
 const server = app.listen(process.env.PORT, ()=>{
