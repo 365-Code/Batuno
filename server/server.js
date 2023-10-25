@@ -20,6 +20,9 @@ app.use(express.json())
 
 app.use('/api/auth', authRoute)
 app.use('/api/message', messageRoute)
+app.get('/', (req, res)=>{
+    res.send({msg:"Working"})
+})
 
 
 const server = app.listen(process.env.PORT, ()=>{

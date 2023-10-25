@@ -10,6 +10,4 @@ router.post('/getMessages', getMessages)
 
 
 
-
-
 export default router
