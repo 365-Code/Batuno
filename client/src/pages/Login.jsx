@@ -25,6 +25,8 @@ const Login = () => {
       if(data){
         setAuth(JSON.parse(data))
         navigate('/')
+      }else{
+        navigate('/login')
       }
     }, [])
 
@@ -35,7 +37,7 @@ const Login = () => {
     }
 
     const handleValidation = ()=>{
-        const {username, email, password, cpassword} = cred
+        const {username, password} = cred
         if(!username){
             toast.error("Invalid Username")
             return false

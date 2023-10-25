@@ -28,7 +28,7 @@ export const registerController = async (req, res)=>{
 
         return res.json({user, status: true})
     } catch(error){
-        console.log(error)
+        // console.log(error)
         return res.json({msg: "Internal Server Error"})
     }
 }
@@ -46,7 +46,7 @@ export const loginController = async (req, res)=>{
         user.password = ''
         return res.json({user, status: true})
     } catch(error){
-        console.log(error)
+        // console.log(error)
         return res.json({msg: "Internal Server Error"})
     }
 }

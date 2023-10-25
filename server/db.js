@@ -10,9 +10,10 @@ const connectDB = async ()=>{
             useUnifiedTopology: true
         });
         
-        console.log("Database Connected".bgMagenta.white)
+        // console.log("Database Connected".bgMagenta.white)
     } catch(error){
-        console.log(`${error}`.bgRed.white)
+        // console.log(`${error}`.bgRed.white)
+        return error
     }
 }
 
