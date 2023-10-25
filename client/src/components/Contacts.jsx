@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/batuno.jpg'
+import logo from '/assets/batuno.jpg'
 import { useAuth } from '../contexts/AuthState'
 import {IoMdLogOut} from 'react-icons/io'
 import Logout from './Logout'

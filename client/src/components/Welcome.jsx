@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useAuth } from '../contexts/AuthState'
-import hello from '../assets/hello.gif'
+import hello from '/assets/hello.gif'
 import { useTheme } from '../contexts/ThemeState'
 
 const Welcome = () => {
