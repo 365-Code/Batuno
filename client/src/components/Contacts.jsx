@@ -15,27 +15,30 @@ const Contacts = ({contacts}) => {
   return (
     <>
         <div id="contacts" className={`flex flex-col gap-2 ${theme.primaryTextColor} sm:relative sm:w-1/4 w-[20%] `}>
-        {/* <div id="contacts" className={`flex flex-col gap-2 ${theme.primaryTextColor} sm:relative sm:w-1/4 top-0 left-0 fixed w-full h-full`}> */}
+        {/* <div id="contacts" className={`flex flex-col gap-2 ${theme.primaryTextColor} sm:relative sm:w-1/4 top-0 left-0 absolute w-[90%] h-full backdrop-blur-sm`}> */}
 
             <div className="brand h-[10%] flex gap-2 sm:justify-start justify-center items-center">
                     <img src={logo} alt="batuno" 
                     className='rounded-full h-2/3'/>
                     <h3 
-                    className='font-semibold hidden sm:hidden md:block'>
+                    className={`${theme.primaryTextColor} font-semibold hidden sm:hidden md:block`}>
                         Batuno</h3>
             </div>
 
             <div 
-            // className="current-user rounded-lg h-[25%] bg-[#DDE6ED] flex flex-col gap-1 items-center justify-center  ">
+            // className={`current-user ${theme.innerBackground} rounded-lg h-[25%] flex flex-col gap-1 p-2 items-center justify-center`}>
             className={`current-user ${theme.innerBackground} rounded-lg h-[25%] flex flex-col gap-1 p-2 items-center justify-center`}>
                 <img src={auth?.avatarImage} alt="user" 
                 className='h-1/2 object-cover rounded-full'/>
                 <h3 className='font-semibold text-center text-sm sm:text-lg'>{auth?.username} </h3>
             </div>
 
-            <div className=" user-contacts h-[65%] flex flex-col">
-                <h3 className='sm:text-lg text-sm font-semibold'>Contacts</h3>
-                <div className="custom-scrollbar overflow-y-scroll flex flex-col gap-1 py-1">
+            <div 
+            className=" user-contacts h-[65%] flex flex-col">
+                <h3 
+                className='sm:text-lg text-sm font-semibold'>Contacts</h3>
+                <div 
+                className="custom-scrollbar overflow-y-scroll flex flex-col gap-1 py-1">
                 {
                     contacts.map((contact, index)=>{
                         return (
