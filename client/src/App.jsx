@@ -20,11 +20,11 @@ const App = () => {
             <Theme>
             <Routes>
 
-              <Route exact path='/register' element={<Register />} />
-              <Route exact path='/login' element={<Login />} />
-              <Route exact path='/forgot-password' element={<ForgotPassword />} />
-              <Route exact path='/setAvatar' element={<SetAvatar />} />
-              <Route exact path='/' element={<Batuno />} />
+              <Route path='/register' element={<Register />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/forgot-password' element={<ForgotPassword />} />
+              <Route path='/setAvatar' element={<SetAvatar />} />
+              <Route path='/' element={<Batuno />} />
 
             </Routes>
             </Theme>
