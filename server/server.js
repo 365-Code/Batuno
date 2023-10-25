@@ -24,7 +24,6 @@ app.get('/', (req, res)=>{
     res.send({msg:"Working"})
 })
 
-
 const server = app.listen(process.env.PORT, ()=>{
     console.log(`Server is Listening at ${process.env.PORT}`.bgCyan.white);
 })
