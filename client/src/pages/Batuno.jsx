@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Contacts from '../components/Contacts'
 import { useAuth } from '../contexts/AuthState';
-import { redirect, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { contactRoute } from '../utils/APIRoutes';
 import Welcome from '../components/Welcome';
@@ -20,8 +20,7 @@ const Batuno = () => {
     if(data){
       setAuth(JSON.parse(data))
     } else{
-      // navigate('/login')
-      redirect('/login')
+      navigate('/login')
     }
   }, [auth])
 
