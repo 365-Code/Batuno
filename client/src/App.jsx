@@ -20,11 +20,11 @@ const App = () => {
             <Theme>
             <Routes>
 
-              <Route path='/register' element={<Register />} />
-              <Route path='/login' element={<Login />} />
-              <Route path='/forgot-password' element={<ForgotPassword />} />
-              <Route path='/setAvatar' element={<SetAvatar />} />
-              <Route path='/' element={<Batuno />} />
+              <Route path='https://batuno.vercel.app/register' element={<Register />} />
+              <Route path='https://batuno.vercel.app/login' element={<Login />} />
+              <Route path='https://batuno.vercel.app/forgot-password' element={<ForgotPassword />} />
+              <Route path='https://batuno.vercel.app/setAvatar' element={<SetAvatar />} />
+              <Route path='https://batuno.vercel.app/' element={<Batuno />} />
 
             </Routes>
             </Theme>

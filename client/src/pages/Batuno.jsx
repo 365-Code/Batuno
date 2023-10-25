@@ -47,7 +47,6 @@ const Batuno = () => {
               !chatUser ?
               <Welcome/>
               :
-              
               <ChatContainer chatUser={chatUser} />
             }
 
