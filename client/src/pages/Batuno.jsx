@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import Contacts from '../components/Contacts'
 import { useAuth } from '../contexts/AuthState';
-import { useNavigate } from 'react-router-dom';
+import { redirect, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { contactRoute, getMessagesRoute } from '../utils/APIRoutes';
+import { contactRoute } from '../utils/APIRoutes';
 import Welcome from '../components/Welcome';
-import Messages from '../components/Messages';
 import ChatContainer from '../components/ChatContainer';
-import { useMsg } from '../contexts/MessageState';
 import { useTheme } from '../contexts/ThemeState';
-import Logout from '../components/Logout';
 
 const Batuno = () => {
 
@@ -23,9 +20,10 @@ const Batuno = () => {
     if(data){
       setAuth(JSON.parse(data))
     } else{
-      navigate('/login')
+      // navigate('/login')
+      redirect('/login')
     }
-  }, [])
+  }, [auth])
 
   useEffect(()=>{
     const getAllContacts = async ()=>{
