@@ -22,7 +22,7 @@ const Batuno = () => {
     } else{
       navigate('/login')
     }
-  }, [auth])
+  }, [])
 
   useEffect(()=>{
     const getAllContacts = async ()=>{

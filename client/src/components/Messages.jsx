@@ -34,7 +34,7 @@ const Messages = () => {
 
     chatUser && getMessages()
 
-  }, [chatUser])
+  }, [])
 
 
   return (

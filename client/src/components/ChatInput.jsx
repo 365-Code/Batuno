@@ -25,7 +25,7 @@ const ChatInput = () => {
       socket.current = io(host)
       socket.current?.emit("add-user", auth._id)
     }
-  }, [auth])
+  }, [])
 
 
   const toggleEmojiPicker = ()=>{
