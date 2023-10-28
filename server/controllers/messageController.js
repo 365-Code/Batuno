@@ -32,7 +32,7 @@ export const getMessages = async (req, res, next)=>{
             }
         })
 
-        const projectMessages = msgs.map((msg)=>{
+        const projectMessages = msgs?.map((msg)=>{
             return {
                 fromSelf: msg.sender.toString() === from,
                 msg: msg.message.text

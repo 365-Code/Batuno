@@ -63,7 +63,7 @@ const SetAvatar = () => {
               // className="avatars bg-[#E0E0E0] px-8 py-4 grid grid-cols-4 gap-4 h-32 overflow-y-scroll custom-scrollbar">
               className={`avatars ${theme.innerBackground} px-8 py-4 grid grid-cols-4 gap-4 h-32 overflow-y-scroll custom-scrollbar`}>
                 {
-                  avatars.map( (avatar, index)=>{
+                  avatars?.map( (avatar, index)=>{
                     return (
                       <div key={`ava${index}tar`} 
                       onClick={()=>{handleSelect(index)}}
@@ -90,109 +90,3 @@ const SetAvatar = () => {
 }
 
 export default SetAvatar
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useEffect, useState } from 'react'
-// import { Link, useNavigate } from 'react-router-dom'
-// import { ToastContainer, toast } from 'react-toastify'
-// import 'react-toastify/dist/ReactToastify.css'
-// import axios from 'axios'
-// import { Buffer } from 'buffer'
-
-// const SetAvatar = () => {
-
-//     const api = "https://api.multiavatar.com/45678945"
-
-    
-//     const toastOptions = {
-//       position: 'bottom-right',
-//       autoClose: 3000,
-//       pauseOnHover: true,
-//       draggable: true,
-//       theme: "dark"
-//   }
-
-//     const [avatars, setAvatars ] = useState([])
-//     const [isLoading, setIsLoading] = useState(true)
-//     const [selectedAvatar, setSelectedAvatar] = useState(undefined)
-
-//     // const setProfile = async ()=>{}
-
-//     useEffect( async ()=>{
-//         const data = [];
-//         for(let i=0; i<4; i++){
-//             const image = await axios.get(`${api}/${Math.round(Math.random()*1000)}`)
-//             const buffer = new Buffer(image.data)
-//             data.push(buffer.toString("base64"))
-//         };
-//         setAvatars(data);
-//         setIsLoading(false)
-//     },[])
-
-
-//   return (
-//     <>
-//         <div className="bg-[#4eoeff]" id="Avatar">
-//           <div>
-//             <div className="avatar-heading">
-//               <h1>Pick an avatar as your profile picture</h1>
-//             </div>
-//             <div className="avatars">
-//               {avatars.map((avatar, index)=>{
-//                 return (
-//                   <div key={index}
-//                     className={`avatar ${selectedAvatar === index ? "selected" : "" }`}>
-//                     <img src={`data;image/svg+xml;base64,${avatar}`} alt="avatar" onClick={()=>setSelectedAvatar(index)} />
-
-//                   </div>
-//                 )
-//               })}
-//             </div>
-//           </div>
-
-//         </div>
-//         <ToastContainer/>
-//     </>
-//   )
-// }
-
-// export default SetAvatar
