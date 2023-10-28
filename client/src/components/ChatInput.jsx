@@ -21,7 +21,8 @@ const ChatInput = () => {
 
 
   useEffect(()=>{
-    if(auth){
+    const data = localStorage.getItem('user')
+    if(auth || data){
       socket.current = io(host)
       socket.current?.emit("add-user", auth._id)
     }
