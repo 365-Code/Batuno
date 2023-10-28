@@ -14,7 +14,7 @@ dotenv.config();
 connectDB();
 
 
-app.use(cors({origin: true}));
+app.use(cors({origin: "https://batuno.vercel.app"}));
 app.use(express.json())
 
 
