@@ -25,13 +25,13 @@ app.get('/', (req, res)=>{
 })
 
 const server = app.listen(process.env.PORT, ()=>{
-    console.log(`Server is Listening at ${process.env.PORT}`.bgCyan.white);
+    console.log(`Server is Listening at https://batuno-server.vercel.app:${process.env.PORT}`.bgCyan.white);
 })
-
 
 const io = new Server(server, {
     cors: {
         origin: "https://batuno.vercel.app",
+        methods: ["GET", "POST"],
         credentials: true
     }
 })

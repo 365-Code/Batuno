@@ -18,6 +18,7 @@ import avatar17 from '/assets/avatar17.png'
 import avatar18 from '/assets/avatar18.png'
 
 export const host = import.meta.env.VITE_REACT_APP_API
+console.log(host)
 export const registerRoute = `${host}/api/auth/register`
 export const loginRoute = `${host}/api/auth/login`
 export const forgotPasswordRoute = `${host}/api/auth/forgotPassword`
