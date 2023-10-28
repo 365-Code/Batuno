@@ -33,7 +33,6 @@ const Batuno = () => {
     data && getAllContacts()
   }, [])
 
-
   return (
     <>
 

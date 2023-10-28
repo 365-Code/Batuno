@@ -5,11 +5,10 @@ import {IoMdLogOut} from 'react-icons/io'
 import Logout from './Logout'
 import { useTheme } from '../contexts/ThemeState'
 
-const Contacts = ({contacts}) => {
+const Contacts = ({contacts, selectChat}) => {
 
     const {auth} = useAuth()
     const [selectedChat, setSelectedChat] = useState()
-    const {setChatUser} = useAuth()
     const {theme} = useTheme()
 
   return (
@@ -40,11 +39,11 @@ const Contacts = ({contacts}) => {
                 <div 
                 className="custom-scrollbar overflow-y-scroll flex flex-col gap-1 py-1">
                 {
-                    contacts.map((contact, index)=>{
+                    contacts?.map((contact, index)=>{
                         return (
                             <div 
                             key={`chat${index}user`}
-                            onClick={()=>{setChatUser(contact); setSelectedChat(index)}}
+                            onClick={()=>{selectChat(contact); setSelectedChat(index)}}
                             // className={`user-contact p-2 cursor-pointer rounded-xl flex items-center gap-2 hover:bg-[#DDE6ED] ${ index === selectedChat && "bg-[#DDE6ED]"}`}>
                             className={`user-contact p-2 cursor-pointer rounded-xl flex w-[95%] sm:justify-start justify-center items-center gap-2 hover:${theme.innerBackground} ${ index === selectedChat && theme.innerBackground}`}>
                                 <img 
