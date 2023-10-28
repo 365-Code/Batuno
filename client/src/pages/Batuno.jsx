@@ -29,8 +29,9 @@ const Batuno = () => {
       const {data} = await axios.get(`${contactRoute}/${auth._id}`)
       setContacts(data)
     }
-    auth && getAllContacts()
-  }, [auth])
+    const data = localStorage.getItem('user');
+    data && getAllContacts()
+  }, [])
 
 
   return (

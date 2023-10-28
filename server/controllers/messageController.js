@@ -7,7 +7,7 @@ export const sendMessage = async (req, res, next)=>{
     try{
         const {message, from, to} = req.body;
 
-        const chat = await messageModel.create({
+        await messageModel.create({
             message: {text: message},
             users: [from, to],
             sender: from
